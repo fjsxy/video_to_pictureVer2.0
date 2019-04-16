@@ -9,4 +9,4 @@ include_directories(${OpenCV_INCLUDE_DIRS} /opt/MVS/include)
 
 link_directories(/opt/MVS/lib/64)
 add_executable(Hik_video_to_pic main.cpp)
-target_link_libraries(Hik_video_to_pic ${OpenCV_LIBS} MvCameraControl pthread)
+target_link_libraries(Hik_video_to_pic ${OpenCV_LIBS} MvCameraControl)

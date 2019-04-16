@@ -35,9 +35,9 @@ int main() {
     cout << "Please input exposure time:" << endl;
     cin >> e_time;
 
-    a.save_path = "/home/fjsxy/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/cal_image";
-//    cout << "Please input the path to save pictures(you should ensure your path is correct):" << endl;
-//    cin >> a.save_path;
+//    a.save_path = "file_path";
+    cout << "Please input the path to save pictures(you should ensure your path is correct):" << endl;
+    cin >> a.save_path;
 
     cout << "Do you want to delete all files in path[" << a.save_path << "], y for YES, n for NO[y or n]:" ;
     string checkByte;
