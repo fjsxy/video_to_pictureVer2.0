@@ -1,5 +1,5 @@
 #include <iostream>
-#include "CameraApi.h"
+#include "CameraApi.h"//该头文件会在相机SDK安装后自动出现在/usr/include中
 #include <opencv2/opencv.hpp>
 #include <opencv2/videoio/videoio_c.h>
 
@@ -35,6 +35,7 @@ int main() {
 
     CameraEnumerateDevice(&cameraEnumList,&cameraCount);
 
+    cout << "请输入曝光时间：" << endl;
     double e_time;
     cin >> e_time;
     a.ID = 0;
